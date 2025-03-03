@@ -4,11 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import CounterApp from './components/databinding/DataBinding';
+import Dolist from './components/databinding/DoList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CounterApp />
+    <Dolist />
   </React.StrictMode>
 );
 
