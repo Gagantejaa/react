@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import CounterApp from './components/databinding/DataBinding';
 import Dolist from './components/databinding/DoList';
+import AppRouting from './components/databinding/RoutingExample';
+import AppTheme, { ThemeSwitcher } from './StateMangement/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Dolist />
+    <AppTheme/>
   </React.StrictMode>
 );
 
