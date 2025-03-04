@@ -1,16 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Dolist from './components/databinding/DoList';
-import AppRouting from './components/databinding/RoutingExample';
-import AppTheme, { ThemeSwitcher } from './StateMangement/App';
+import AppForm from './Form/FormApp';
+import TodoApp from './Crud/TodoApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppTheme/>
+    <TodoApp/>
   </React.StrictMode>
 );
 

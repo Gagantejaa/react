@@ -1,0 +1,41 @@
+/* Set the full-screen background */
+body {
+  margin: 5;
+  padding: 5;
+  background-color: skyblue; /* ✅ Apply sky blue to entire screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* ✅ Make it cover the full viewport */
+}
+
+/* Update form container */
+.form-container {
+  width: 400px; /* ✅ Increased width */
+  padding: 30px; /* ✅ More padding */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: rgb(253, 254, 252); /* ✅ Form stays white */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
