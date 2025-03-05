@@ -1,0 +1,42 @@
+/* Center align all content */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: center; /* Center links horizontally */
+    align-items: center;
+}
+
+/* Navbar links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 20px; /* Add spacing between links */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #00bcd4;
+}
+
+/* Page container */
+.page-container {
+    margin-top: 50px;
+    padding: 20px;
+    background: white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,31 @@
+.greeting-container {
+    text-align: center;
+    background: lightblue;
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  input {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: darkgreen;
+  }
+  
