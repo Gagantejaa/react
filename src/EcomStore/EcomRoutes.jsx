@@ -1,19 +1,26 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Login from './Login';
-import ProductCatalogue from './ProductCatalogue';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LoginPage from "./LoginPage";
+import ProductCatalogue from "./ProductCatalogue";
+import CartPage from "./CartPage";
+import PaymentPage from "./PaymentPage";
+import { CartProvider } from "./CartContext";
 
 const EcomRoutes = () => {
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-    return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
-                <Route path="/products" element={isAuthenticated ? <ProductCatalogue /> : <Navigate to="/" />} />
-            </Routes>
-        </Router>
-    );
+  return (
+    <CartProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LoginPage setIsAuthenticated={setIsAuthenticated} />} />
+          <Route path="/products" element={isAuthenticated ? <ProductCatalogue /> : <LoginPage setIsAuthenticated={setIsAuthenticated} />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/payment" element={<PaymentPage />} />
+        </Routes>
+      </Router>
+    </CartProvider>
+  );
 };
 
 export default EcomRoutes;
