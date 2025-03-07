@@ -15,4 +15,8 @@ function CounterApp() {
   );
 }
  
+
 export default CounterApp;
+
+export default CounterApp; 
+
