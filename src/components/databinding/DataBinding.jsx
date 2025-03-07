@@ -15,5 +15,8 @@ function CounterApp() {
   );
 }
  
+
+export default CounterApp;
+
 export default CounterApp; 
-//This is the code done so Far ...!
+
