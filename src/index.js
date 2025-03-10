@@ -1,14 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import EcomRoutes from "./EcomStore/EcomRoutes";
-import "./styles.css";
-import FetchAPIData from "./Capstone-mini/FetchAPIData";
-import ShowHideText from "./Capstone-mini/ShowHideText";
-import AppRoutes from "./Capstone-mini/Routes";
+import DynamicRoutes from "./DynamicPages/DynamicRoutes"; // Ensure this path is correct
+import "./DynamicPages/DynamicStyles.css"; // Import styles globally
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-       <AppRoutes/>
+    <DynamicRoutes />
   </React.StrictMode>
 );
