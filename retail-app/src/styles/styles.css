@@ -1,0 +1,290 @@
+/* --- Global Styles --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* --- Headings --- */
+h1, h2 {
+  color: #222;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* --- Form Styles --- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.2);
+}
+
+/* --- Buttons --- */
+button {
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* --- Error Messages --- */
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* --- Link Buttons --- */
+.link-btn {
+  background: none;
+  color: #007bff;
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.link-btn:hover {
+  color: #0056b3;
+}
+
+/* --- Authentication Pages (Login & Signup) --- */
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 15px;
+}
+
+.auth-container label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-btn:hover {
+  background: #218838;
+}
+
+.switch-page {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.switch-page span {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.switch-page span:hover {
+  text-decoration: underline;
+}
+
+/* --- Home Page --- */
+.homepage {
+  text-align: center;
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+.homepage h1 {
+  font-size: 32px;
+  color: #222;
+}
+
+.homepage p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* --- Product Listing --- */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 120px;
+  height: 140px;
+  object-fit: contain;
+}
+
+.buy-btn {
+  background: #ff6600;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.buy-btn:hover {
+  background: #e55b00;
+}
+
+/* --- Logout Button --- */
+.logout-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logout-btn:hover {
+  background: darkred;
+}
+
+/* --- Responsive Design --- */
+@media screen and (max-width: 768px) {
+  .container,
+  .auth-container,
+  .homepage {
+    width: 90%;
+    margin: 30px auto;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .scroll-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
+  
+}
