@@ -1,0 +1,74 @@
+.payment-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .payment-summary {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .payment-summary h3 {
+    margin-bottom: 10px;
+  }
+  
+  .payment-summary ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .payment-summary li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .total-amount {
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    margin-top: 10px;
+  }
+  
+  /* Button Container */
+  .button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* Back to Cart Button */
+  .back-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .back-button:hover {
+    background-color: darkblue;
+  }
+  
+  /* Confirm Payment Button */
+  .confirm-payment {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .confirm-payment:hover {
+    background-color: darkgreen;
+  }
+  

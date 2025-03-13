@@ -1,0 +1,77 @@
+/* Import a clean, professional font */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+
+.start-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #eceff1, #cfd8dc); /* Neutral gradient */
+  font-family: "Nunito", sans-serif;
+}
+
+.welcome-box {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.welcome-box h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #37474f; /* Dark gray for professionalism */
+}
+
+.welcome-box p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #546e7a;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.professional-btn {
+  padding: 12px 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  width: 140px;
+}
+
+.login-btn {
+  background: #1e88e5; /* Professional blue */
+  color: white;
+  box-shadow: 0 3px 10px rgba(30, 136, 229, 0.3);
+}
+
+.signup-btn {
+  background: #43a047; /* Deep green */
+  color: white;
+  box-shadow: 0 3px 10px rgba(67, 160, 71, 0.3);
+}
+
+.professional-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+.start-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f") no-repeat center center/cover;
+  font-family: "Nunito", sans-serif;
+}
+
