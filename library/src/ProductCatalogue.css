@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+.product-container {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #283593, #1e88e5); /* Deep blue gradient */
+  padding: 30px;
+  min-height: 100vh;
+  color: #fff;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ffeb3b; /* Bright yellow for contrast */
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Add Product Button */
+.add-product-button {
+  background: #ff5722; /* Vibrant orange */
+  color: white;
+  box-shadow: 0 5px 15px rgba(255, 87, 34, 0.5);
+  margin-bottom: 20px;
+}
+
+/* Product List */
+.product-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Product Item */
+.product-item {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  transform: scale(1.07);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product-image {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Product Name */
+.product-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Product Price */
+.product-price {
+  font-size: 0.9rem;
+  color: #1e88e5;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+/* Bottom Buttons */
+.button-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Cart Button */
+.cart-button {
+  background: #43a047; /* Vibrant green */
+  color: white;
+  box-shadow: 0 5px 15px rgba(67, 160, 71, 0.5);
+}
+
+/* Logout Button */
+.logout-button {
+  background: #d32f2f; /* Deep red */
+  color: white;
+  box-shadow: 0 5px 15px rgba(211, 47, 47, 0.5);
+}
+
+/* Common Button Styling */
+.add-product-button, .cart-button, .logout-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  min-width: 150px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Hover Effects */
+.add-product-button:hover,
+.cart-button:hover,
+.logout-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
